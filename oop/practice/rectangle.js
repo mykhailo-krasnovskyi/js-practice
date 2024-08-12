@@ -8,9 +8,18 @@ export class Rectangle extends Shape {
         // }
         super(color);
 
-        this.width = width;
+        this._width = width;
         this.height = height;
 
+    }
+
+    set width(value) {
+        this._width = value;
+
+    }
+
+    get width() {
+        return this._width;
     }
 
     area() {
