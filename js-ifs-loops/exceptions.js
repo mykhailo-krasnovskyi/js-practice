@@ -8,20 +8,18 @@ console.log('Before error');
 // }
 
 function divideNumbers(a, b) {
-    if (b === 0) {
-        throw new Error("Ділення на нуль недопустиме!");
-    }
-    return a / b;
+	if (b === 0) {
+		throw new Error('Ділення на нуль недопустиме!');
+	}
+	return a / b;
 }
 try {
-    const result = divideNumbers(10, 4);
-    console.log(result);  // Цей рядок не буде виконано через throw вище
+	const result = divideNumbers(10, 4);
+	console.log(result); // Цей рядок не буде виконано через throw вище
 } catch (error) {
-    console.error("Сталася помилка:", error.message);
+	console.error('Сталася помилка:', error.message);
 } finally {
-    console.log("Це повідомлення виводитиметься завжди")
+	console.log('Це повідомлення виводитиметься завжди');
 }
 
 console.log('After error');
-
-

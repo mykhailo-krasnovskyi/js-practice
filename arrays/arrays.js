@@ -15,7 +15,6 @@
 // console.log(firstName);
 // console.log(result);
 
-
 // const animals = ['cat', 'dog', 'elephant'];
 
 // for (let i = 0; i < animals.length; i++) {
@@ -26,7 +25,6 @@
 //     console.log(animal);
 
 // }
-
 
 // const array1 = ['Dog', 'Person', 3, 4, 5, 6, true, false, 'House', 'Test', 7, 8];
 // const array2 = [];
@@ -43,7 +41,6 @@
 //     }
 // }
 
-
 // const array1 = ['String', 'String2', 'STRING3', 'string4'];
 // const array2 = [];
 
@@ -51,8 +48,6 @@
 //     array2[array2.length] = string.toUpperCase();
 
 // }
-
-
 
 // console.log(array2);
 
@@ -81,7 +76,6 @@
 // const originalArray = [1, 2, 3, 4, 5];
 // const copiedArray = [].concat(originalArray);
 
-
 // const sentence = "Це реченнямаєкілька, слів";
 // const words = sentence.split(",");
 // console.log(words); // ["Це", "речення", "має", "кілька", "слів"]
@@ -90,7 +84,6 @@
 // const fruitString = fruits.join("");
 // console.log(fruitString); // "яблуко, банан, полуниця"
 
-
 // const fruits = ["яблуко", "банан", "полуниця"];
 // fruits[0] = false;
 
@@ -98,7 +91,6 @@
 // const numbers = [10, 20, 30, 30, 30, 40, 50];
 // const index = numbers.indexOf('30');
 // console.log(index); // 2
-
 
 // const colors = ["червоний", "зелений", "синій"];
 // const hasGreen = colors.includes("зелен2222ий");
@@ -122,14 +114,12 @@
 // queue.unshift("A", "q", '42142');
 // console.log(queue); // ["A", "B", "C"]
 
-
 // const numbers = [1, 2, 3, 4, 5];
 // const slicedArray = numbers.slice(1, 4); // [3, 4, 5]
 // console.log(slicedArray);
 
 // const colors = ["червоний", "зелений", "синій"];
 // colors.splice(1, 0, "жовтий", "оранжевий");
-
 
 // console.log(colors); // ["червоний", "жовтий", "оранжевий", "зелений", "синій"]
 
@@ -145,7 +135,6 @@
 // const array2 = [3, 4];
 // const concatenatedArray = array1.concat(array2);
 // console.log(concatenatedArray); // [1, 2, 3, 4]
-
 
 // const numbers = [1, 2, 3, 4, 5];
 // numbers.forEach((number, i) => {
@@ -168,7 +157,6 @@
 
 // console.log(firstEvenNumberIndex);
 
-
 // const numbers = [1, 2, 3, 4, 5];
 // const doubledNumbers = numbers.map((number) => number * 2);
 // console.log(doubledNumbers);
@@ -180,7 +168,6 @@
 // const nestedArray = [[1, 2], [3, 4], [5, 6]];
 // const flatArray = nestedArray.flat(); // [1, 2, 3, 4, 5, 6]
 // console.log(flatArray);
-
 
 // const numbers = [1, 2, 3];
 // const doubledAndFlattened = numbers.flatMap((number) => [number * 2, number * 3]); // [2, 3, 4, 6, 6, 9]
@@ -220,7 +207,6 @@
 
 // console.log(allEvenNumbers);
 
-
 // const numbers = [1, 2, 3, 4, 5, 6];
 
 // for (const number of numbers) {
@@ -238,8 +224,6 @@
 //     }
 // });
 
-
-
 // let str = 'This is a string fas fsa afs ';
 // let wordsCount = 0;
 
@@ -256,7 +240,6 @@
 // let str = numbersArray.join(',');
 // console.log(str);
 
-
 // let words = ['apple', 'banana', 'orange', 'cherry', 'pie'];
 // let minLength = 5;
 // let maxLength = 6;
@@ -266,13 +249,11 @@
 // console.log(filteredArray);
 // console.log(filteredArray2);
 
-
 // let numbers = [1, 2, 3, 4, 5, 6];
 
 // let numbers2 = numbers.map(number => number * number);
 
 // console.log(numbers2);
-
 
 // let numbers = [-2, -2, -13, 4, -5, 6];
 
@@ -280,8 +261,13 @@
 
 // console.log(firstPositive);
 
-const matrix = [[1, 2, 3, 'fasfas'], [4, 5, 6], [7, 8, 9]];
+const matrix = [
+	[1, 2, 3, 'fasfas'],
+	[4, 5, 6],
+	[7, 8, 9],
+];
 
+console.log(matrix);
 // console.log(matrix[0][0]); // 1
 // console.log(matrix[1][2]); // 6
 // console.log(matrix[2][1]); // 8

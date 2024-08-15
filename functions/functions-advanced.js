@@ -29,7 +29,6 @@
 //     console.log('Bye');
 // }
 
-
 // hof(sayHi);
 // hof(sayBye);
 
@@ -44,8 +43,6 @@
 // }
 
 // hof(saySomething, 'test string');
-
-
 
 // function processPayment(onSuccessCb, onFailureCb, paymentId) {
 //     const isSuccess = true;
@@ -98,7 +95,6 @@
 // greet.call(person2);
 // greet();
 
-
 //Apply
 // function greet(greetingText) {
 //     console.log(`${greetingText} ${this.name}`);
@@ -115,10 +111,8 @@
 // const greetPerson1 = greet.bind(person);
 // const greetPerson2 = greet.bind(person2);
 
-
 // greetPerson1();
 // greetPerson2();
-
 
 // function Book(title, author, year) {
 //     this.title = title;
@@ -136,24 +130,18 @@
 // book1.printData();
 // book2.printData();
 
-
-
-
 // (function sayHello(name) {
 //     console.log(`Hello ${name}`)
 // })('Test');
 
-
-// function counter() {
-//     let count = 1;
-//     return function () {
-//         return count++;
-//     }
-// }
-
-// let counter1 = counter();
-// let counter2 = counter();
-
+function counter(num) {
+	if (num >= 0) {
+		console.log(num);
+		num--;
+		counter(num);
+	}
+}
+counter(5);
 
 // console.log(counter1());
 // console.log(counter1());
@@ -164,7 +152,6 @@
 // console.log('-----------');
 // console.log(counter2());
 // console.log(counter2());
-
 
 // function multiplier(factor) {
 //     return function (x) {
@@ -188,7 +175,6 @@
 // console.log(triple(2));
 // console.log(triple(3));
 
-
 // function countToTen(startValue) {
 //     for (let i = startValue; i < 10; i++) {
 //         console.log(i);
@@ -196,7 +182,6 @@
 // }
 
 // countToTen(5);
-
 
 // function countToTenRecursions(startValue) {
 
@@ -208,7 +193,6 @@
 // }
 
 // countToTenRecursions(5);
-
 
 // function factorial(n) {
 //     // Базовий випадок: факторіал 0 або 1 = 1
@@ -224,14 +208,12 @@
 // const result = factorial(5);
 // console.log(result); // Виведе 120
 
-
 // function traverse(node) {
 //     console.log(node.value);
 //     node.children.forEach(child => {
 //         traverse(child); // Рекурсивний виклик для кожного дочірнього вузла
 //     });
 // }
-
 
 // const tree = {
 //     value: 1,
@@ -257,3 +239,24 @@
 // };
 
 // traverse(tree);
+
+async function fetchTemperature(city) {
+	const apiKey = 'bd664c238b837a54a22ee16796bbea50';
+	const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
+	const response = await fetch(apiUrl);
+	const data = await response.json();
+	console.log(data);
+	return data;
+}
+
+const city = 'Kharkiv';
+fetchTemperature(city)
+	.then((data) => {
+		if (data !== null) {
+			console.log(`Current temp in city ${city}: ${data.main.temp}°C`);
+		}
+	})
+	.catch((e) => {
+		console.log(e);
+	});

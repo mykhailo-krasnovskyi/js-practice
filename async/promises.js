@@ -21,7 +21,6 @@
 //         console.log('Finally!');
 //     })
 
-
 // newPromise.then(function (value) {
 //     return value + 10;
 // })
@@ -31,7 +30,6 @@
 //     .then(function (value) {
 //         console.log(value);
 //     })
-
 
 // function step1() {
 //     return new Promise(function (resolve, reject) {

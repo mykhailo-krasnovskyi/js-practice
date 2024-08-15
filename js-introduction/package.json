@@ -1,17 +1,16 @@
 {
-  "name": "js-practice",
-  "version": "1.0.0",
-  "description": "",
-  "main": "script.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "tests:dev" : "echo \"Dev tests are running\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "chalk": "latest"
-
-  },
-  "type": "module"
+	"name": "js-practice",
+	"version": "1.0.0",
+	"description": "",
+	"main": "script.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"tests:dev": "echo \"Dev tests are running\" && exit 1"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"chalk": "latest"
+	},
+	"type": "module"
 }

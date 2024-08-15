@@ -6,7 +6,6 @@
 
 // console.log('Finish Program');
 
-
 // function startProgram() {
 //     console.log('Start');
 // }
@@ -14,7 +13,6 @@
 // function finishProgram() {
 //     console.log('Finish');
 // }
-
 
 // startProgram();
 // setTimeout(function () {
@@ -32,5 +30,3 @@
 
 // console.log('AFTER FINISH');
 // console.log('AFTER FINISH2');
-
-

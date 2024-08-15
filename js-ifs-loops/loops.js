@@ -2,8 +2,6 @@
 //     console.log(i);
 // }
 
-
-
 // for (let i = 10; i >= 0; i--) {
 //     console.log(i);
 // }
@@ -22,11 +20,9 @@
 //     console.log(i);
 // }
 
-
 // for (let a = 0, b = 0, c = 10; a < 10, b < 5, c > 0; a++, b++, c--) {
 //     console.log(`a:${a}, b:${b}, c:${c}`);
 // }
-
 
 // let i = 0;
 
@@ -41,7 +37,6 @@
 //     console.log(i);
 //     i++;
 // } while (i < 5);
-
 
 // for (let i = 1; i <= 9; i++) {
 // 	for (let j = 1; j <= 3; j++) {
@@ -71,9 +66,6 @@
 
 //console.log(output);
 
-
-
-
 // const number = 5;
 
 // for (let i = 1; i <= 10; i++) {
@@ -86,9 +78,7 @@
 //     i++;
 // }
 
-
 // !5 = 1*2*3*4*5 = 120
-
 
 // let number = 5;
 // let factorial = 1;
@@ -99,18 +89,16 @@
 
 // console.log(factorial);
 
-
-
-let userInput = "test string";
+let userInput = 'test string';
 let vowelCount = 0;
 
 for (let i = 0; i < userInput.length; i++) {
-    let currentChar = userInput[i];
+	let currentChar = userInput[i];
 
-    if (currentChar === 'a' || currentChar === 'e' || currentChar === 'o' || currentChar === 'u' || currentChar === 'i') {
-        vowelCount++;
-        console.log(`We found a vowel! It's ${currentChar} on index ${i}`);
-    }
+	if (currentChar === 'a' || currentChar === 'e' || currentChar === 'o' || currentChar === 'u' || currentChar === 'i') {
+		vowelCount++;
+		console.log(`We found a vowel! It's ${currentChar} on index ${i}`);
+	}
 }
 
 console.log('The number of vowels is ' + vowelCount);

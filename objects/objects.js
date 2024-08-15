@@ -1,4 +1,3 @@
-
 // const person = {
 //     name: "David",
 //     age: 53,
@@ -28,7 +27,6 @@
 
 // }
 
-
 // function Person(name, age) {
 //     this.name = name;
 //     this.age = age;
@@ -38,28 +36,16 @@
 
 // const person1 = new Object("age", 30);
 
-
-
-
 // console.log(person['age']);
-
-
-
-
 
 // person.age = 31;
 
-
-
 // person.address = 'New York';
-
 
 // person.address = 'Chicago';
 
 // console.log(person.getName());
 // console.log(person.calculateAge(30));
-
-
 
 // const age = 25;
 // const name = "John"
@@ -100,7 +86,6 @@
 
 // }
 
-
 // let propertyName = "address";
 
 // const person2 = {
@@ -114,15 +99,12 @@
 
 // console.log(person2["full name"]);
 
-
 // const user = {
 //     name: "Max",
 //     email: null,
 // }
 
-
 // console.log(user.address?.street);
-
 
 // const user = {
 //     name: "John",
@@ -134,7 +116,6 @@
 
 // // Без оператора опціонального доступу
 // console.log(user.phones.mobile);
-
 
 // const user = {
 //     email: 'useremailrandom@emal.com',
@@ -153,14 +134,10 @@
 // console.log(userGender); // "Невідомо"
 // console.log(result);
 
-
-
 // for (let key in person) {
 //     console.log(typeof person[key]);
 //     console.log(`${key} : ${JSON.stringify(person[key])}`);
 // }
-
-
 
 // console.log(person.hasOwnProperty('name'));
 // console.log(person.hasOwnProperty('site'));
@@ -178,7 +155,6 @@
 
 // }
 
-
 // const personNew = {
 
 //     age: 30,
@@ -193,9 +169,7 @@
 //     console.log(`${name}, ${age}, ${address}`);
 // }
 
-
 // printData(personNew);
-
 
 // const people = [
 //     { name: "John", age: 30, address: 'assafasfas' },
@@ -205,7 +179,6 @@
 // for (const { name, age } of people) {
 //     console.log(`${name} is ${age} years old`);
 // }
-
 
 // const personNewNew = {
 //     name: "John",
@@ -221,8 +194,6 @@
 // console.log(name); // "John"
 // console.log(city); // "New York"
 // console.log(country); // "USA"
-
-
 
 // const numbers = [1, 2, 3];
 
@@ -240,7 +211,6 @@
 // console.log(second); // 2
 // console.log(third); // 0 (значення за замовчуванням)
 
-
 // let a = 1;
 // let b = 2;
 
@@ -249,12 +219,10 @@
 // console.log(a); // 2
 // console.log(b); // 1
 
-
 // const numbers = [1, 2, 3];
 // const newNumbers = [...numbers, 4, 5];
 
 // console.log(newNumbers); // [1, 2, 3, 4, 5]
-
 
 // const obj1 = {
 //     val1: 50,
@@ -262,8 +230,6 @@
 // }
 
 // const obj2 = obj1;
-
-
 
 // console.log(obj1);
 // console.log(obj2);
@@ -278,7 +244,6 @@
 
 // console.log(newPerson);
 // { name: "John", age: 30, gender: "male" }
-
 
 // function sum(...numbers) {
 //     return numbers.reduce((total, num) => total + num, 0);
@@ -318,12 +283,7 @@
 // };
 // const copiedObject = { ...originalObject };
 
-
-
-
-
 // console.log(copiedObject.address.streetDeep.obj3);
-
 
 // Функція приймає один об'єкт параметрів
 // function printUserInfo(user) {
@@ -356,10 +316,8 @@
 
 // Object.freeze(obj1);
 
-
 // obj1.prop1 = 100;
 // console.log(obj1.prop1);
-
 
 // const originalObject = { name: 'John', age: 30 };
 // const copiedObject = {};
@@ -367,10 +325,7 @@
 //     copiedObject[key] = originalObject[key];
 // }
 
-
 // console.log(copiedObject);
-
-
 
 const myMap = new Map();
 myMap.set('key1', 'value1');

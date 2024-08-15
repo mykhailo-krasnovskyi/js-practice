@@ -1,26 +1,22 @@
 // let strNumber = "44fsafsa2.09";
 // console.log(typeof strNumber); // string
 
-// let num3 = Number(strNumber); // 42 стає числом 
+// let num3 = Number(strNumber); // 42 стає числом
 // console.log(num3); // number
 
-// let num = parseInt(strNumber); // 42 стає числом 
+// let num = parseInt(strNumber); // 42 стає числом
 // console.log(num); // number
 
-
-// let num2 = parseFloat(strNumber) // 42 стає числом 
+// let num2 = parseFloat(strNumber) // 42 стає числом
 // console.log(num2); // number
-
 
 // let numberA = 1000;
 // let numberB = 66;
 // let numberC = 10.5151;
 
-
 // console.log(String(numberA));
 // console.log(numberB.toString());
 // console.log(numberC.toString());
-
 
 // let a = 0.1;
 // let b = 0.2;
@@ -35,7 +31,6 @@
 // console.log(+false); // 1
 // console.log(+""); // 0
 // console.log(+"12"); // 12
-
 
 // // Extra task 1
 

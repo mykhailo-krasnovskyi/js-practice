@@ -7,14 +7,11 @@
 //     }
 // }
 
-
 // if (x < 5) {
 //     console.log('X is less than 5');
 // }
 
 // if (x < 5) console.log("One lane");
-
-
 
 // let time = 5;
 // let greeting;
@@ -29,7 +26,6 @@
 //     greeting = 'Your input is not correct.'
 // }
 
-
 // console.log(greeting)
 
 // !x
@@ -42,11 +38,8 @@
 //     console.log('The string is empty')
 // }
 
-
-
 // const numberA = -1;
 // const numberB = 4;
-
 
 // if (numberA >= 0 && numberB >= 0) {
 //     console.log('Numbers are positive');
@@ -54,20 +47,15 @@
 //     console.log('At least one number is not positive');
 // }
 
-
 /*
 child - >=3 &&<=13
 teenager - >=14 && <=18
 adult - >=19&&60
 */
 
-
-
 // let age = 15;
 
 // let stage;
-
-
 
 // if (age >= 0 && age <= 13) {
 //     stage = 'a child'
@@ -79,11 +67,8 @@ adult - >=19&&60
 
 // console.log(stage);
 
-
-
 // const numberA = -4;
 // const numberB = -44;
-
 
 // if (numberA >= 0 && numberB >= 0) {
 //     console.log('Numbers are positive');
@@ -92,7 +77,6 @@ adult - >=19&&60
 // } else {
 //     console.log('Both numbers are negative');
 // }
-
 
 // const age = 6;
 // let accessAllowed;
@@ -107,7 +91,6 @@ adult - >=19&&60
 
 // console.log(accessAllowed);
 
-
 // let studentAge = 24;
 // let hadDriverApprove = true;
 // if (studentAge >= 18 && hadDriverApprove) {
@@ -115,8 +98,6 @@ adult - >=19&&60
 // } else {
 //     console.log('You can not practice');
 // }
-
-
 
 let studentAge = 24;
 let hadDriverApprove = true;

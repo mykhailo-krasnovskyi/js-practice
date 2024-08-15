@@ -5,8 +5,6 @@
 
 // console.log(chalk.blue('Hello world!'));
 
-
-
 // const age = 30;
 
 // console.log(age);
@@ -22,12 +20,9 @@
 // console.log('My variable:' + age);
 // console.log(`My variable ${age}`);
 
-
-
 // let age = 30;
 
 // let fullAge = 30.5;
-
 
 // let name = "Іван";
 
@@ -45,9 +40,7 @@
 
 // console.log(uniqNumber===uniqNumber2)
 
-
 // const name = null;
-
 
 // function foo() {
 
@@ -63,17 +56,12 @@
 // console.log(testVariable2);
 // console.log(testVariable3);
 
-
-
-
 // let variableName1;
 // variableName1 = 'Name';
 // const variableName = "Test2";
 // variableName = 'Test';
 
 // console.log(variableName)
-
-
 
 // console.log(variable1);
 // let variable1 = "test";

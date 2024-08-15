@@ -1,52 +1,48 @@
 class Car {
+	// color = "blue";
+	// liters = 0;
 
-    // color = "blue";
-    // liters = 0;
+	#number;
 
-    #number;
+	constructor(color, liters, brand) {
+		this.color = color;
+		this.liters = liters;
+		this.brand = brand;
+	}
 
+	turnOn() {
+		console.log(`${this.color} ${this.brand} is turned on`);
+	}
 
-    constructor(color, liters, brand) {
-        this.color = color;
-        this.liters = liters;
-        this.brand = brand;
-    }
+	turnOff() {
+		console.log(`${this.color} ${this.brand} is turned off`);
+	}
 
-    turnOn() {
-        console.log(`${this.color} ${this.brand} is turned on`);
-    }
+	fillPetrol(litersAdded) {
+		this.liters += litersAdded;
+		console.log(`Filled ${litersAdded}. Now car has ${this.liters} liters of petrol`);
+	}
 
-    turnOff() {
-        console.log(`${this.color} ${this.brand} is turned off`);
+	printNumber() {
+		console.log(this.#number);
+	}
 
-    }
+	printFullNumber() {
+		console.log(`ADadsda`);
+		this.printNumber();
+	}
 
-    fillPetrol(litersAdded) {
-        this.liters += litersAdded;
-        console.log(`Filled ${litersAdded}. Now car has ${this.liters} liters of petrol`);
-    }
+	set number(carNumber) {
+		if (carNumber.length < 5) {
+			console.log('Wrong number');
+		} else {
+			this.#number = carNumber;
+		}
+	}
 
-    printNumber() {
-        console.log(this.#number);
-    }
-
-    printFullNumber() {
-        console.log(`ADadsda`);
-        this.printNumber();
-    }
-
-    set number(carNumber) {
-
-        if (carNumber.length < 5) {
-            console.log('Wrong number');
-        } else {
-            this.#number = carNumber;
-        }
-    }
-
-    get number() {
-        return `The number is ${this.#number}`;
-    }
+	get number() {
+		return `The number is ${this.#number}`;
+	}
 }
 
 // const bmw = new Car();
@@ -75,7 +71,6 @@ const car3 = new Car('red', 0, 'Opel');
 car3.number = 'AA123456';
 //console.log(car3.number);
 
-
 // class Circle {
 //     static PI = 3.14;
 // }
@@ -94,58 +89,45 @@ car3.number = 'AA123456';
 
 // console.log(Calculator.add(4, 10));
 
-
-
-
 class Shape {
+	constructor(color) {
+		this.color = color;
+	}
 
-    constructor(color) {
-        this.color = color;
-    }
-
-    area() {
-        throw new Error('Method area should be implemented');
-
-    }
-
+	area() {
+		throw new Error('Method area should be implemented');
+	}
 }
 
-
 class Circle extends Shape {
+	constructor(color, radius) {
+		super(color);
+		this.radius = radius;
+	}
 
-    constructor(color, radius) {
-        super(color);
-        this.radius = radius;
-    }
-
-    area() {
-        return Math.PI * this.radius ** 2;
-    }
-
+	area() {
+		return Math.PI * this.radius ** 2;
+	}
 }
 
 class Rectangle extends Shape {
-    constructor(color, width = 20, height = 20) {
-        // if (width < 0 || height < 0) {
-        //     throw new Error('Data is not correct');
+	constructor(color, width = 20, height = 20) {
+		// if (width < 0 || height < 0) {
+		//     throw new Error('Data is not correct');
 
-        // }
-        super(color);
+		// }
+		super(color);
 
-        this.width = width;
-        this.height = height;
+		this.width = width;
+		this.height = height;
+	}
 
-    }
-
-    area() {
-        return this.width * this.height;
-    }
-
+	area() {
+		return this.width * this.height;
+	}
 }
 
-class New {
-
-}
+class New {}
 
 // const newObject = new New();
 // newObject.name = 'NAME';
@@ -157,11 +139,9 @@ class New {
 
 // console.log(circle1.area());
 
-
 // const rectangle1 = new Rectangle('red');
 // console.log(rectangle1.width);
 // console.log(rectangle1.area());
-
 
 // class Animal {
 //     makeSound() {
@@ -194,17 +174,16 @@ class New {
 //   animalSound(dog); // Woof woof!
 //   animalSound(cat); // Meow!
 
-
 const user = {
-    login() {
-        return true;
-    }
-}
+	login() {
+		return true;
+	},
+};
 
 const person = {
-    name: 'John',
-    age: 42,
-    __proto__: user
+	name: 'John',
+	age: 42,
+	__proto__: user,
 };
 
 console.log(Object.getOwnPropertyNames(person)); // ['name', 'age']

@@ -1,29 +1,26 @@
-import { Shape } from "./shape.js";
+import { Shape } from './shape.js';
 
 export class Rectangle extends Shape {
-    constructor(color, width = 20, height = 20) {
-        // if (width < 0 || height < 0) {
-        //     throw new Error('Data is not correct');
+	constructor(color, width = 20, height = 20) {
+		// if (width < 0 || height < 0) {
+		//     throw new Error('Data is not correct');
 
-        // }
-        super(color);
+		// }
+		super(color);
 
-        this._width = width;
-        this.height = height;
+		this._width = width;
+		this.height = height;
+	}
 
-    }
+	set width(value) {
+		this._width = value;
+	}
 
-    set width(value) {
-        this._width = value;
+	get width() {
+		return this._width;
+	}
 
-    }
-
-    get width() {
-        return this._width;
-    }
-
-    area() {
-        return this.width * this.height;
-    }
-
+	area() {
+		return this.width * this.height;
+	}
 }
