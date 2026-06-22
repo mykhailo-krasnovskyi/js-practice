@@ -4,7 +4,6 @@
 // }, 4000);
 // console.log('Finish Program');
 
-
 // function getData() {
 //     console.log('Request to DB sent...');
 //     setTimeout(function () {
@@ -28,7 +27,6 @@
 // }
 
 // getData(printData);
-
 
 // function fetchUser(callback) {
 //     setTimeout(() => {
@@ -81,7 +79,6 @@
 //     });
 // });
 
-
 // const newPromise = new Promise((resolve) => {
 //     setTimeout(function () {
 //         resolve('10');
@@ -117,7 +114,6 @@
 //     }).finally(() => {
 //         console.log('Finally');
 //     });
-
 
 // function fetchUser() {
 //     return new Promise((resolve) => {
@@ -176,7 +172,6 @@
 //     .then(() => console.log('Done'))
 //     .catch(error => console.error('Error:', error));
 
-
 // const a = Promise.resolve('Hello');
 // const b = Promise.reject('Promise all rejected');
 // const c = Promise.resolve('All');
@@ -186,8 +181,6 @@
 //     .then(x => x.toString().replaceAll(',', ' '))
 //     .then(console.log)
 //     .catch(console.log);
-
-
 
 // const promiseA = Promise.resolve('Hello');
 // const promiseB = Promise.reject('Promise all rejected');
@@ -205,7 +198,6 @@
 // Promise.race([promiseA, promiseB, promiseC])
 //     .then(x => console.log('Fulfilled: ', x))
 //     .catch(x => console.log('Rejected: ', x));
-
 
 // const getDelay = (from, to) => Math.floor(Math.random() * (to - from + 1)) + from;
 
@@ -234,7 +226,6 @@
 //         console.log(`Error happened`);
 //     })
 
-
 // async function fetchPostById(postId) {
 //     const response = await fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`);
 //     const data = await response.json();
@@ -248,18 +239,15 @@
 
 // printPostDataById(10);
 
-
 // async function fetchTemperature(city) {
 //     const apiKey = 'bd664c238b837a54a22ee16796bbea50';
 //     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-
 
 //     const response = await fetch(apiUrl);
 //     const data = await response.json();
 //     console.log(data);
 //     return data;
 // }
-
 
 // const city = 'Kharkiv';
 // fetchTemperature(city)
@@ -272,69 +260,73 @@
 //         console.log(e)
 //     }));
 
-
-
 function fetchUser() {
-    return new Promise(resolve => {
-        setTimeout(() => {
-            console.log('1) User fetched');
-            resolve({ id: 1, name: 'Alex' });
-        }, 500);
-    });
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      console.log('1) User fetched');
+      resolve({ id: 1, name: 'Alex' });
+    }, 500);
+  });
 }
 
 function fetchUserSettings(user) {
-    return new Promise(resolve => {
-        setTimeout(() => {
-            console.log('2) Settings fetched for', user.name);
-            resolve({ theme: 'dark', notifications: true });
-        }, 500);
-    });
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      console.log('2) Settings fetched for', user.name);
+      resolve({ theme: 'dark', notifications: true });
+    }, 500);
+  });
 }
 
 function validateSettings(settings) {
-    return new Promise(resolve => {
-        setTimeout(() => {
-            console.log('3) Settings validated');
-            resolve(true);
-        }, 500);
-    });
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      console.log(
+        '3) Settings validated' +
+          'test1131331313' +
+          'afaffasfasfasfas' +
+          'afaffasfasfasfas' +
+          'afaffasfasfasfas',
+      );
+      resolve(true);
+    }, 500);
+  });
 }
 
 function saveUserData(isValid) {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            if (!isValid) {
-                reject(new Error('Validation failed'));
-                return;
-            }
-            console.log('4) User data saved');
-            resolve();
-        }, 500);
-    });
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (!isValid) {
+        reject(new Error('Validation failed'));
+        return;
+      }
+      console.log('4) User data saved');
+      resolve();
+    }, 500);
+  });
 }
 
 function notifyUser() {
-    return new Promise(resolve => {
-        setTimeout(() => {
-            console.log('5) User notified');
-            resolve();
-        }, 500);
-    });
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      console.log('5) User notified');
+      resolve();
+    }, 500);
+  });
 }
 
 async function processUser() {
-    try {
-        const user = await fetchUser();
-        const settings = await fetchUserSettings(user);
-        const isValid = await validateSettings(settings);
-        await saveUserData(isValid);
-        await notifyUser();
+  try {
+    const user = await fetchUser();
+    const settings = await fetchUserSettings(user);
+    const isValid = await validateSettings(settings);
+    await saveUserData(isValid);
+    await notifyUser();
 
-        console.log('Done');
-    } catch (error) {
-        console.error('Error:', error.message);
-    }
+    console.log('Done');
+  } catch (error) {
+    console.error('Error:', error.message);
+  }
 }
 
 processUser();
