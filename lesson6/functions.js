@@ -104,6 +104,8 @@
 
 // function sum(...numbers) {
 //     console.log(numbers);
+//     const result = numbers.reduce((acc, number) => acc + number, 0);
+//     console.log(result);
 // }
 
 // sum(10, 20, 30, 40, 50, 100, 200);
