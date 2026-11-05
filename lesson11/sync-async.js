@@ -16,7 +16,6 @@
 // }, 6000);
 // console.log('Finish program');
 
-
 // function getDataFromDB() {
 //     console.log('Request to DB sent');
 //     setTimeout(function () {
@@ -26,8 +25,6 @@
 
 // const data = getDataFromDB();
 // console.log(`Data: ${data}`);
-
-
 
 // function getDataFromDB(callback) {
 //     console.log('Request to DB sent');
@@ -58,7 +55,6 @@
 //     .then(dataUpperCase => dataUpperCase.split(' '))
 //     .then(dataSplitted => console.log(dataSplitted));
 
-
 // const getRandomNumber = new Promise((reject, resolve) => {
 //     setTimeout(() => {
 //         const randomNumber = Math.random();
@@ -74,7 +70,6 @@
 //     .then((number) => console.log(number))
 //     .catch((error) => console.log(error))
 //     .finally(() => console.log('Finally!'));
-
 
 // function fetchUser(callback) {
 //     setTimeout(() => {
@@ -188,7 +183,6 @@
 
 // successPromise.then((text) => console.log(text));
 
-
 // const promiseA = Promise.resolve('Hello');
 // const promiseB = Promise.reject('Promise all rejected');
 // const promiseC = Promise.resolve('allSettled');
@@ -240,24 +234,23 @@
 
 // fetchPostById(4);
 
-
 async function fetchTemperature(city) {
-    const apiKey = 'bd664c238b837a54a22ee16796bbea50';
-    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-    const response = await fetch(apiUrl);
-    const data = await response.json();
-    console.log(data);
-    return data;
-}
+  const apiKey = 'bd664c238b837a54a22ee16796bbea50';
+  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  const response = await fetch(apiUrl);
+  const data = await response.json();
 
+  console.log(data);
+  return data;
+}
 
 const city = 'Kharkiv';
 fetchTemperature(city)
-    .then(data => {
-        if (data !== null) {
-            console.log(`Current temp in city ${city}: ${data.main.temp}°C`);
-        }
-    })
-    .catch(((e) => {
-        console.log(e)
-    }));
+  .then((data) => {
+    if (data !== null) {
+      console.log(`Current temp in city ${city}: ${data.main.temp}°C`);
+    }
+  })
+  .catch((e) => {
+    console.log(e);
+  });
