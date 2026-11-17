@@ -8,13 +8,16 @@
     "prepare": "husky"
   },
   "author": "",
-  "type": "module",
+  "type": "commonjs",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^6.0.1"
+    "axios": "^1.21.1",
+    "chalk": "^6.0.1",
+    "jest": "^30.5.2"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@types/jest": "^30.0.0",
     "eslint": "^10.14.0",
     "globals": "^17.14.0",
     "prettier": "3.9.10"
